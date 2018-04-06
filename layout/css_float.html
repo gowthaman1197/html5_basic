@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS float</title>
+</head>
+<body>
+	<div class="container">
+		
+		<header>
+			<h1>My City</h1>
+		</header>
+		<nav>
+			<ul>
+				<li>Madurai</li>
+				<li>Chennai</li>
+				<li>Bangalore</li>
+			</ul>
+		</nav>
+		<section>
+			<article>
+				<h1>Welcome to Madurai</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ipsa velit maxime reiciendis ea adipisci incidunt sapiente omnis laborum. Molestias non voluptas porro reiciendis animi reprehenderit quia, illo ducimus dolore. 
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ipsa velit maxime reiciendis ea adipisci incidunt sapiente omnis laborum. Molestias non voluptas porro reiciendis animi reprehenderit quia, illo ducimus dolore.
+				</p>
+			</article>
+		</section>
+		<footer>
+			<p>Copyright &copy; mycities.com</p>
+		</footer>
+	</div>
+	<style type="text/css">
+		
+		.container{
+			width: 100%;
+			border: 1px solid grey;
+			
+		}
+		header, footer{
+			padding: 16px;
+			color: #fff;
+			background-color: #000;
+			text-align: center;
+			clear: both;
+		}
+		nav{
+			float: left;
+			max-width: 160px;
+			margin: 0;
+			padding: 16px;
+		}
+		nav ul{
+			list-style-type: none;
+			padding: 0;
+		}
+		section{
+			margin-left: 20px;
+			overflow: hidden;
+			padding: 16px;
+			border-left: 1px solid grey;
+		}
+	</style>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML table</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Degree</th>
+		</tr>
+		<tr>
+			<td>Gowthaman</td>
+			<td>20</td>
+			<td rowspan="2">MCA</td>
+		</tr>
+		<tr>
+			<td>Suriya</td>
+			<td>21</td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<th colspan="2">name&url</th>
+			<th>price</th>
+		</tr>
+		<tr>
+			<td>jacksoftware</td>
+			<td>jack-software.com</td>
+			<td>3200$</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<table id="mytable">
+		<tr>
+			<th>Name</th>
+			<th>age</th>
+		</tr>
+		<tr>
+			<td>Gowtham</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Suriya</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Suriya</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Suriya</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Suriya</td>
+			<td>20</td>
+		</tr>
+
+	</table>
+	<style type="text/css">
+		table#mytable th, td{
+			border: 1px solid green;
+		}
+		th, td{
+			padding: 20px;
+		}
+		#mytable tr:nth-child(odd){
+			background-color: red;
+		}
+		#mytable tr:nth-child(even){
+			background-color: black;
+			color: white;
+		}
+	</style>
+</body>
+</html>

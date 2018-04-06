@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS float</title>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>My website</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</nav>
+		<div class="content">
+			<section>
+				<article>
+					<h1>My article</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis placeat, molestiae, temporibus eius voluptate soluta deleniti ex adipisci maiores quas aliquam numquam porro. Ipsum hic accusamus magnam voluptatibus, numquam beatae.</p>
+				</article>
+				<article>
+					<h1>My article</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis placeat, molestiae, temporibus eius voluptate soluta deleniti ex adipisci maiores quas aliquam numquam porro. Ipsum hic accusamus magnam voluptatibus, numquam beatae.</p>
+				</article>
+				<article>
+					<h1>My article</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis placeat, molestiae, temporibus eius voluptate soluta deleniti ex adipisci maiores quas aliquam numquam porro. Ipsum hic accusamus magnam voluptatibus, numquam beatae.</p>
+				</article>
+				<article>
+					<h1>My article</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis placeat, molestiae, temporibus eius voluptate soluta deleniti ex adipisci maiores quas aliquam numquam porro. Ipsum hic accusamus magnam voluptatibus, numquam beatae.</p>
+				</article>
+				<article>
+					<h1>My article</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis placeat, molestiae, temporibus eius voluptate soluta deleniti ex adipisci maiores quas aliquam numquam porro. Ipsum hic accusamus magnam voluptatibus, numquam beatae.</p>
+				</article>
+
+			</section>
+			<aside>
+				<div id="news">
+					<h2>Lastest news</h2>
+					<ul>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+						<li><a href="#">Link 3</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<footer>
+			<p>This is the footer</p>
+		</footer>
+	</div>
+	<style type="text/css">
+		#container{
+			width: 100%;			
+		}
+		header, footer{
+			background-color: #000;
+			color: #fff;
+			padding: 16px;
+			clear: both;
+			text-align: center;
+		}
+		nav ul{
+			background-color: #ff9a92;
+			color: #fff;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		nav li{
+			float: left;
+			display: block;
+			padding: 20px;			
+		}
+		nav li a{
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+		#content{
+			width: 100%;
+			margin: 10px 0px;
+			background-color: #eee;
+		}
+		section{
+			width: 68%;
+			float: left;
+		}
+		article h1, aside h2{
+			font-size: 25px;
+		}
+		section article, aside ul{
+			padding: 20px;
+		}
+		aside{
+			width: 31%;
+			float: right;
+			margin-left: 10px;
+		}
+		#news{
+			padding: 20px;
+		}
+		
+
+	</style>
+</body>
+</html>

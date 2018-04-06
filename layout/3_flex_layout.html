@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex layout</title>
+</head>
+<body>
+	<div class="flex-container">
+		<header>
+			<h1>City Gallery</h1>
+		</header>
+		<nav class="nav">
+			<ul>
+				<li><a href="#">Madurai</a></li>
+				<li><a href="#">Chennai</a></li>
+				<li><a href="#">Theni</a></li>
+			</ul>
+		</nav>
+		<article class="article">
+			<h1>Madurai</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa ipsam sunt minus distinctio optio doloribus. Placeat ipsa quod quisquam alias, impedit, libero sint repellendus ab nesciunt. Error, earum? Ducimus.</p>
+		</article>
+		<footer>
+			<p>Copyright &copy; mycities.com</p>
+		</footer>
+		<style type="text/css">
+			.flex-container{
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-flow: row wrap;
+				flex-flow: row wrap;
+				text-align: center;
+			}
+			.flex-container>*{
+				padding: 15px;
+				-webkit-flex: 1 100%;
+				flex: 1 100%;
+			}
+			header, footer{
+				background-color: #000;
+				color: #fff;
+			}
+			.nav{
+				background: #eee;
+			}
+			.nav ul{
+				list-style-type: none;
+				padding: 0px;
+			}
+			.nav ul li{
+				padding: 10px;
+			}
+			.nav ul a{
+				text-decoration: none;
+				text-transform: uppercase;
+				color: #000;
+				font-size: 14px;
+			}
+			.nav ul a:hover{
+				color: red;
+			}
+			.article{
+				text-align: left;
+			}
+			@media all and (min-width: 768px){
+				.nav{
+					text-align: left;
+					-wekit-flex: 1 auto;
+					flex: 1 auto;
+					-webkit-order: 1;
+					order: 1;
+				}
+				.article {
+				 	-webkit-flex:5 0px;
+				 	flex:5 0px;
+				 	-webkit-order:2;
+				 	order:2;
+				}
+    			footer {-webkit-order:3;order:3;}
+			}
+		</style>
+	</div>
+</body>
+</html>
